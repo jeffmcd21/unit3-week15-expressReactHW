@@ -7,7 +7,7 @@ const router = express.Router();
 // INDEX ROUTE
 router.get("/", async (req, res) => {
     try {
-        res.json(await People.find({}))
+        res.json(await Cheese.find({}))
 
     } catch (error) {
         res.status(400).json(error);
